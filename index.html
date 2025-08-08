@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            particlesJS("particles-js", {
+                "particles": {
+                    "number": { "value": 60, "density": { "enable": true, "value_area": 800 } },
+                    "color": { "value": "#ffffff" },
+                    "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" } },
+                    "opacity": { "value": 0.5 },
+                    "size": { "value": 3, "random": true },
+                    "line_linked": {
+                        "enable": true, "distance": 150,
+                        "color": "#ffffff", "opacity": 0.4, "width": 1
+                    },
+                    "move": { "enable": true, "speed": 3, "out_mode": "out" }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": { "enable": true, "mode": "grab" },
+                        "onclick": { "enable": true, "mode": "push" },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": { "distance": 140, "line_linked": { "opacity": 1 } },
+                        "push": { "particles_nb": 4 }
+                    }
+                },
+                "retina_detect": true
+            });
+        });
+        window.addEventListener("scroll", function () {
+            const navbar = document.getElementById("navbar");
+            if (window.scrollY > 10) {
+                navbar.classList.add("bg-black/50", "border-white/10");
+            } else {
+                navbar.classList.remove("bg-black/50", "border-white/10");
+            }
+        });
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ricky Wijaya - Creative Front-End Developer & UI/UX Designer crafting exceptional digital experiences. Portfolio showcasing web development, design projects, and video work.">
+    <meta name="keywords" content="front-end developer, UI/UX designer, web developer, portfolio, video editor, Indonesia">
+    <meta name="author" content="Ricky Wijaya">
+    <meta name="theme-color" content="#1e1b4b">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ricky Wijaya | Front-End Developer & UI/UX Designer">
+    <meta property="og:description" content="Portfolio of Ricky Wijaya - Creative developer and designer crafting exceptional digital experiences.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ricky Wijaya | Front-End Developer & UI/UX Designer">
+    <meta name="twitter:description" content="Portfolio of Ricky Wijaya - Creative developer and designer crafting exceptional digital experiences.">
+    <link rel="icon" type="image/png" href="image/favicon.webp">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <title>Ricky Wijaya | Front-End Developer & UI/UX Designer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-950">
+    <nav id="navbar" class="fixed top-0 w-full h-16 border-b border-transparent z-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto flex items-center justify-between h-full px-4">
+            <p class="text-white text-lg">
+                <span class="poppins-bold">Ricky</span> Wijaya
+            </p>
+            <div class="flex space-x-6 items-center text-white">
+                <a href="#introduction" class="hidden md:flex hover:underline">About</a>
+                <a href="#services" class="hidden md:flex hover:underline">Service</a>
+                <a href="#education" class="hidden md:flex hover:underline">Education</a>
+                <a href="#contact" class="hidden md:flex hover:underline">Contact</a>
+                <a href="#footer" class="ml-4 bg-white text-black px-4 py-1 rounded-md hover:bg-gray-200">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="particles-js" class="absolute top-0 left-0 z-1 bg-gray-950"></div>
+    <div id="main" class="relative z-10">
+        <div id="introduction" class="w-full mt-12 py-8 p-4 md:py-12 md:p-8">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div>
+                    <div id="name"
+                        class="p-4 w-fit text-blue-200 text-xl bg-blue-400/70 rounded-md shadow poppins-bold">
+                        Hi! I'm Ricky Wijaya
+                    </div>
+
+                    <div id="role" class="mt-4 text-2xl poppins-bold text-white">
+                        Front-End Developer <br>UI/UX Designer
+                    </div>
+
+                    <div id="description" class="mt-4 text-sm opacity-70 max-w-xl text-white">
+                        Crafting exceptional digital experiences through innovative design and clean code. I specialize in creating intuitive interfaces that delight users while delivering measurable business results.
+                    </div>
+
+                    <div id="profile" class="flex flex-wrap gap-2 mt-8">
+                        <a href="https://www.linkedin.com/in/ricky-wijaya-8b9231321/" target="_blank"
+                            class="px-4 py-2 bg-blue-600 text-white border duration-300 border-blue-600 rounded-md shadow hover:bg-blue-700 transition poppins-bold">
+                            <div>
+                                <i class="fa-brands fa-linkedin"></i>
+                                LinkedIn
+                            </div>
+                        </a>
+                        <a
+                            class="px-4 py-2 text-purple-400 border border-purple-400 rounded-md shadow hover:border-purple-300 hover:text-purple-300 transition poppins-bold cursor-pointer">
+                            <div class="flex flex-wrap gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#805ad5">
+                                    <path
+                                        d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Z" />
+                                </svg>
+                                Download CV
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="justify-end flex">
+                    <img class="md:w-80" src="image/profile.webp">
+                </div>
+            </div>
+            <div class="mt-10 w-fit flex mx-auto md:mx-0 bg-purple-600 text-white py-2 px-6 rounded-full shadow-md">
+                <div class="flex gap-2 flex-wrap  poppins-bold">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e3e3e3">
+                        <path
+                            d="M21-440v-79h252v79H21Zm284-159-95-95 56-56 95 95-56 56Zm135-88v-252h79v252h-79Zm215 88-56-56 95-95 56 56-95 95Zm32 159v-79h252v79H687Zm-206.71 70q-46.37 0-78.33-31.66Q370-433.33 370-479.71q0-46.37 31.66-78.33Q433.33-590 479.71-590q46.37 0 78.33 31.66Q590-526.67 590-480.29q0 46.37-31.66 78.33Q526.67-370 480.29-370ZM699-205 599-305l56-56 100 100-56 56Zm-438 0-56-56 100-100 56 56-100 100ZM440-21v-252h79v252h-79Z" />
+                    </svg>
+                    ABOUT ME
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <div class="text-2xl poppins-bold text-white">
+                    Hi! I'm Ricky Wijaya
+                </div>
+                <div class="opacity-70 mt-4 text-white">
+                                        With a passion for blending aesthetics and functionality, I create digital experiences that engage users and drive conversions. My approach combines user-centered design principles with cutting-edge development techniques to deliver solutions that are both beautiful and performant across all devices.
+                </div>
+
+                <div class="mt-4 md:mt-10 space-y-4 text-white grid grid-cols-1 md:grid-cols-5 gap-4">
+                    <div>
+                        <h1 class="text-xl poppins-semibold opacity-60">Contact</h1>
+                        <p class="text-md opacity-100">rickywijayax@gmail.com</p>
+                    </div>
+                    <div>
+                        <h1 class="text-xl poppins-semibold opacity-60">Phone</h1>
+                        <p class="text-md opacity-100">+62 896-3728-7300</p>
+                    </div>
+                    <div>
+                        <h1 class="text-xl poppins-semibold opacity-60">Spoken Language</h1>
+                        <p class="text-md opacity-100">English, Indonesia, Melayu, Mandarin</p>
+                    </div>
+                    <div>
+                        <h1 class="text-xl poppins-semibold opacity-60">Interest</h1>
+                        <p class="text-md opacity-100">Videography, Reading, Adventure</p>
+                    </div>
+                    <div>
+                        <h1 class="text-xl poppins-semibold opacity-60">Social Media</h1>
+                        <div class="mt-2">
+                            <a target="_blank" href="https://www.linkedin.com/in/ricky-wijaya-8b9231321/"><i class="fa-brands fa-linkedin fa-2xl" style="color: #0077B5"></i></a>
+                            <a target="_blank" href="https://github.com/RickWijaya"><i class="fa-brands fa-github fa-2xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="services" class="w-full bg-gray-950 text-white px-4 py-8">
+            <div class="mt-4 w-fit flex mx-auto bg-purple-600 text-white poppins-bold py-2 px-6 rounded-full shadow-md">
+                <div class="flex gap-2 flex-wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#FFFFFF">
+                        <path
+                            d="M21-440v-79h252v79H21Zm284-159-95-95 56-56 95 95-56 56Zm135-88v-252h79v252h-79Zm215 88-56-56 95-95 56 56-95 95Zm32 159v-79h252v79H687Zm-206.71 70q-46.37 0-78.33-31.66Q370-433.33 370-479.71q0-46.37 31.66-78.33Q433.33-590 479.71-590q46.37 0 78.33 31.66Q590-526.67 590-480.29q0 46.37-31.66 78.33Q526.67-370 480.29-370ZM699-205 599-305l56-56 100 100-56 56Zm-438 0-56-56 100-100 56 56-100 100ZM440-21v-252h79v252h-79Z" />
+                    </svg>
+                    Services
+                </div>
+            </div>
+            <div class="mt-4 text-center">
+                <p class="poppins-bold">Services I Offer</p><br>
+                I offer comprehensive digital solutions tailored to your business needs, from initial concept to final implementation and beyond.
+            </div>
+            <div class="grid grid-cols-1 mt-4 gap-4 md:grid-cols-3 md:gap-8 p-2">
+                <div class="border border-white p-4 rounded-md bg-linear-to-t from-gray-900 to-gray-950 transition duration-300 hover:from-gray-700 hover:to-gray-850">
+                    <svg class="mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" height="68px" viewBox="0 -960 960 960"
+                        width="68px" fill="#2563eb">
+                        <path
+                            d="M100-120q-24 0-42-18t-18-42v-108q0-24 18-42t42-18h272q24 0 42 18t18 42v108q0 24-18 42t-42 18H100Zm492 0q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h268q24 0 42 18t18 42v600q0 24-18 42t-42 18H592Zm134-120q13 0 21.5-9t8.5-21q0-13-8.5-21.5T726-300q-13 0-21.5 8.5T696-270q0 12 8.5 21t21.5 9ZM100-448q-24 0-42-18t-18-42v-272q0-24 18-42t42-18h272q24 0 42 18t18 42v272q0 24-18 42t-42 18H100Zm182-212q13 0 21.5-8.5T312-690q0-12-8.5-21t-21.5-9q-12 0-21 9t-9 21q0 13 9 21.5t21 8.5ZM93-506h181l-91-121-90 121Z" />
+                    </svg>
+                    <h1 class="poppins-bold">UI/UX Design</h1>
+                    <p class="opacity-70 mt-2">Transform your digital presence with intuitive interfaces designed for optimal user engagement. My process includes user research, wireframing, prototyping, and usability testing to ensure seamless experiences.</p>
+                </div>
+                <div class="border border-white p-4 rounded-md bg-linear-to-t from-gray-900 to-gray-950 transition duration-300 hover:from-gray-700 hover:to-gray-850">
+                    <svg class="mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" height="68px" viewBox="0 -960 960 960"
+                        width="68px" fill="#2563eb">
+                        <path
+                            d="m196-120-6-51-8-4q-4-2-11-7l-48 20-44-76 41-31v-21l-41-32 44-76 48 20q5-3 9.5-6t9.5-5l6-51h88l6 51 4 2 4 2q2 1 5 3l6 4 48-20 44 76-41 31v22l219-127-45 79 12 9-158 92-31 54-48-20q-5 3-9.5 6t-9.5 5l-6 51h-88Zm44-220q-25 0-42.5 17.5T180-280q0 25 17.5 42.5T240-220q25 0 42.5-17.5T300-280q0-25-17.5-42.5T240-340Zm156-220-6-51q-2-2-5-3t-5-3v220l-15-26-45 19v-204l-40-70 40-31v-21l-41-32 44-76 48 20q5-3 9.5-6t9.5-5l6-51h88l6 51 8 4q4 2 11 7l48-20 44 76-41 31v21l41 32-44 76-48-20q-5 3-9.5 6t-9.5 5l-6 51h-88Zm44-220q-25 0-42.5 17.5T380-720q0 25 17.5 42.5T440-660q25 0 42.5-17.5T500-720q0-25-17.5-42.5T440-780Zm236 660-6-51-8-4q-4-2-11-7l-48 20-44-76 41-31v-21l-41-31 44-77 48 20q3-2 4-2.5l15-7.5-216-152h48l4-36 195 136h63l6 51 4 2 4 2q2 1 5 3l6 4 48-20 44 76-41 31v21l41 32-44 76-48-20q-5 3-9.5 6t-9.5 5l-6 51h-88Zm44-220q-25 0-42.5 17.5T660-280q0 25 17.5 42.5T720-220q25 0 42.5-17.5T780-280q0-25-17.5-42.5T720-340Z" />
+                    </svg>
+                    <h1 class="poppins-bold">Front-End Development</h1>
+                    <p class="opacity-70 mt-2">Bring designs to life with clean, efficient code. I build responsive, accessible websites and applications using modern frameworks and best practices to ensure fast loading and cross-browser compatibility.</p>
+                </div>
+                <div class="border border-white p-4 rounded-md bg-linear-to-t from-gray-900 to-gray-950 transition duration-300 hover:from-gray-700 hover:to-gray-850">
+                    <svg class="mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" height="68px" viewBox="0 -960 960 960"
+                        width="68px" fill="#2563eb">
+                        <path
+                            d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm0-60h680v-520H140v520Zm551 0 98-374-519-146-98 374 519 146Zm-43-74L245-408l68-258 403 114-68 258Zm-508 74v-520 520Z" />
+                    </svg>
+                    <h1 class="poppins-bold">Video Editing</h1>
+                    <p class="opacity-70 mt-2">Create compelling visual stories with professional video editing services. From corporate presentations to creative content, I deliver polished videos that capture attention and communicate your message effectively.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="education" class="w-full p-4 mt-10 bg-cs-grid">
+            <div class="mt-4 w-fit flex mx-auto bg-purple-600 text-white py-2 px-6 rounded-full shadow-md">
+                <div class="flex gap-2 flex-wrap  poppins-bold">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#FFFFFF">
+                        <path
+                            d="M21-440v-79h252v79H21Zm284-159-95-95 56-56 95 95-56 56Zm135-88v-252h79v252h-79Zm215 88-56-56 95-95 56 56-95 95Zm32 159v-79h252v79H687Zm-206.71 70q-46.37 0-78.33-31.66Q370-433.33 370-479.71q0-46.37 31.66-78.33Q433.33-590 479.71-590q46.37 0 78.33 31.66Q590-526.67 590-480.29q0 46.37-31.66 78.33Q526.67-370 480.29-370ZM699-205 599-305l56-56 100 100-56 56Zm-438 0-56-56 100-100 56 56-100 100ZM440-21v-252h79v252h-79Z" />
+                    </svg>
+                    LIFETIME
+                </div>
+            </div>
+            <div class="mt-4 text-center">
+                <p class="poppins-bold">EDUCATION & EXPERIENCES</p><br>
+                <p class="mb-10">
+                    My professional path combines academic excellence with hands-on experience, equipping me with both theoretical knowledge and practical skills.
+                </p>
+            </div>
+            <div class="relative max-w-6xl mx-auto px-4">
+  <div class="absolute top-0 bottom-0 left-4 md:left-1/2 md:-translate-x-1/2 w-px border-l-2 border-dashed border-gray-600"></div>
+  <div class="space-y-12">
+    <div class="md:grid md:grid-cols-2 md:gap-8 relative">
+      <div class="md:col-span-1 flex flex-col items-end md:pr-8">
+        <div class="md:bg-white sm:bg-none p-4 sm:shadow-none rounded md:shadow w-full md:w-auto mt-10 hover:scale-110 transition duration-300">
+          <div class="poppins-bold text-2xl my-2">Bsc Information Technology</div>
+          <div class="text-yellow-500 poppins-bold">2024 - Current</div>
+          <div class="text-sm my-2">
+            President University is devoted to excellence in teaching, learning, research and developing leaders in many disciplines who make a difference globally.
+          </div>
+          <div class="text-md my-2 poppins-bold">President University, Cikarang, Jawa Barat, Indonesia</div>
+        </div>
+      </div>
+      <div class="absolute left-1 -translate-x-3 md:left-1/2 md:-translate-x-1/2 top-1/2 -translate-y-1/2 bg-yellow-800 rounded-full w-4 h-4 border-8 border-yellow-400"></div>
+    </div>
+    <div class="md:grid md:grid-cols-2 md:gap-8 relative">
+      <div class="hidden md:block"></div>
+      <div class="md:col-span-1 flex flex-col items-start md:pl-8">
+        <div class="md:bg-white sm:bg-none p-4 rounded sm:shadow-none md:shadow w-full md:w-auto hover:scale-110 transition duration-300">
+          <div class="poppins-bold text-2xl my-2 ">High School</div>
+          <div class="text-yellow-500 poppins-bold">2021 - 2024</div>
+          <div class="text-sm my-2">
+            Developed foundational technical skills and creative problem-solving abilities at SMK Dharma Loka, where I first discovered my passion for digital design and development.
+          </div>
+          <div class="text-md my-2 poppins-bold">SMK Dharma Loka, Pekanbaru, Riau, Indonesia</div>
+        </div>
+      </div>
+    <div class="absolute left-1 -translate-x-3 md:left-1/2 md:-translate-x-1/2 top-1/2 -translate-y-1/2 bg-yellow-800 rounded-full w-4 h-4 border-8 border-yellow-400"></div> 
+    </div>
+    <div class="md:grid md:grid-cols-2 md:gap-8 relative">
+      <div class="md:col-span-1 flex flex-col items-end md:pr-8">
+        <div class="md:bg-white sm:bg-none p-4 rounded sm:shadow-none md:shadow w-full md:w-auto hover:scale-110 transition duration-300">
+          <div class="poppins-bold text-2xl my-2">Internship</div>
+          <div class="text-yellow-500 poppins-bold">2022 - 2022</div>
+          <div class="text-sm my-2">
+                Applied my creative skills in a professional setting at PT. Toba Makmur Perkasa, contributing to visual design projects and gaining valuable industry experience.
+          </div>
+          <div class="text-md my-2 poppins-bold">PT.TOBA MAKMUR PERKASA, Pekanbaru, Riau, Indonesia</div>
+          <div class="flex gap-2 mt-2">
+            <div class="border border-gray-200 flex items-center justify-center bg-gradient-to-t from-gray-300 to-gray-200 h-12 w-12 rounded-full">
+              <img src="image/Adobe_Photoshop_CC_icon.svg.png" class="w-8">
+            </div>
+            <div class="border border-gray-200 flex items-center justify-center bg-gradient-to-t from-gray-300 to-gray-200 h-12 w-12 rounded-full">
+              <img src="image/Adobe_Illustrator_CC_icon.svg.png" class="w-8">
+            </div>
+            <div class="border border-gray-200 flex items-center justify-center bg-gradient-to-t from-gray-300 to-gray-200 h-12 w-12 rounded-full">
+              <img src="image/Adobe_Premiere_Pro_CC_icon.svg.png" class="w-8">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute left-1 -translate-x-3 md:left-1/2 md:-translate-x-1/2 top-1/2 -translate-y-1/2 bg-yellow-800 rounded-full w-4 h-4 border-8 border-yellow-400"></div>
+    </div>
+    <div class="md:grid md:grid-cols-2 md:gap-8 relative">
+      <div class="hidden md:block"></div>
+      <div class="md:col-span-1 flex flex-col items-start md:pl-8">
+        <div class="mb-10 md:bg-white sm:bg-none  p-4 rounded sm:shadow-none md:shadow w-full md:w-auto hover:scale-110 transition duration-300">
+          <div class="poppins-bold text-2xl my-2">Internship</div>
+          <div class="text-yellow-500 poppins-bold">2022 - 2022</div>
+          <div class="text-sm my-2">
+            Enhanced my design capabilities at CV Cahaya Duo Bintang, working on various creative projects that helped refine my artistic vision and technical execution.
+          </div>
+          <div class="text-md my-2 poppins-bold">CV CAHAYA DUO BINTANG, Pekanbaru, Riau, Indonesia</div>
+          <div class="flex gap-2 mt-2">
+            <div class="border border-gray-200 flex items-center justify-center bg-gradient-to-t from-gray-300 to-gray-200 h-12 w-12 rounded-full">
+              <img src="image/Adobe_Photoshop_CC_icon.svg.png" class="w-8">
+            </div>
+            <div class="border border-gray-200 flex items-center justify-center bg-gradient-to-t from-gray-300 to-gray-200 h-12 w-12 rounded-full">
+              <img src="image/Adobe_Illustrator_CC_icon.svg.png" class="w-8">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute left-1 -translate-x-3 md:left-1/2 md:-translate-x-1/2 top-1/2 -translate-y-1/2 bg-yellow-800 rounded-full w-4 h-4 border-8 border-yellow-400"></div>
+    </div>
+  </div>
+</div>
+
+
+            <div id="awards" class="w-full p-4 bg-gray-100">
+                <div
+                    class="mt-10 w-fit flex mx-auto bg-purple-600 text-white poppins-bold py-2 px-6 rounded-full shadow-md">
+                    <div class="flex gap-2 flex-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#FFFFFF">
+                            <path
+                                d="M21-440v-79h252v79H21Zm284-159-95-95 56-56 95 95-56 56Zm135-88v-252h79v252h-79Zm215 88-56-56 95-95 56 56-95 95Zm32 159v-79h252v79H687Zm-206.71 70q-46.37 0-78.33-31.66Q370-433.33 370-479.71q0-46.37 31.66-78.33Q433.33-590 479.71-590q46.37 0 78.33 31.66Q590-526.67 590-480.29q0 46.37-31.66 78.33Q526.67-370 480.29-370ZM699-205 599-305l56-56 100 100-56 56Zm-438 0-56-56 100-100 56 56-100 100ZM440-21v-252h79v252h-79Z" />
+                        </svg>
+                        AWARDS
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 mt-4 gap-4">
+                    <div class="bg-linear-to-r from-gray-200 to-gray-300 p-4 gap-4 rounded-md transition duration-300 hover:from-purple-500 hover:to-purple-600 hover:text-yellow-200 hover:scale-101">
+                        <p class="poppins-bold">Best Poster(2nd)</p>
+                        <p class="text-sm">Information Technology Olympiad 10</p>
+                    </div>
+                    <div class="bg-linear-to-r from-gray-200 to-gray-300 p-4 gap-4 rounded-md transition duration-300 hover:from-purple-500 hover:to-purple-600 hover:text-yellow-200 hover:scale-101">
+                        <p class="poppins-bold">Best Movie(1st)</p>
+                        <p class="text-sm">Information Technology Olympiad 10</p>
+                    </div>
+                    <div class="bg-linear-to-r from-gray-200 to-gray-300 p-4 gap-4 rounded-md transition duration-300 hover:from-purple-500 hover:to-purple-600 hover:text-yellow-200 hover:scale-101">
+                        <p class="poppins-bold">Grand Champion</p>
+                        <p class="text-sm">Information Technology Olympiad 10</p>
+                    </div>
+                    <div class="bg-linear-to-r from-gray-200 to-gray-300 p-4 gap-4 rounded-md transition duration-300 hover:from-purple-500 hover:to-purple-600 hover:text-yellow-200 hover:scale-101">
+                        <p class="poppins-bold">Best Movie(1st)</p>
+                        <p class="text-sm">Information Technology Olympiad 10</p>
+                    </div>
+                    <div class="bg-linear-to-r from-gray-200 to-gray-300 p-4 gap-4 rounded-md transition duration-300 hover:from-purple-500 hover:to-purple-600 hover:text-yellow-200 hover:scale-101">
+                        <p class="poppins-bold">Grand Champion</p>
+                        <p class="text-sm">Information Technology Olympiad 11</p>
+                    </div>
+                    <div class="bg-linear-to-r from-gray-200 to-gray-300 p-4 gap-4 rounded-md transition duration-300 hover:from-purple-500 hover:to-purple-600 hover:text-yellow-200 hover:scale-101">
+                        <p class="poppins-bold">Mandarin Festival(Runner Up)</p>
+                        <p class="text-sm">Universitas Negeri Surabaya</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="filmography" class="w-full p-4 mt-10">
+            <div class="mt-4 w-fit flex mx-auto bg-purple-600 text-white py-2 px-6 rounded-full shadow-md">
+                <div class="flex gap-2 flex-wrap  poppins-bold">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#FFFFFF">
+                        <path
+                            d="M21-440v-79h252v79H21Zm284-159-95-95 56-56 95 95-56 56Zm135-88v-252h79v252h-79Zm215 88-56-56 95-95 56 56-95 95Zm32 159v-79h252v79H687Zm-206.71 70q-46.37 0-78.33-31.66Q370-433.33 370-479.71q0-46.37 31.66-78.33Q433.33-590 479.71-590q46.37 0 78.33 31.66Q590-526.67 590-480.29q0 46.37-31.66 78.33Q526.67-370 480.29-370ZM699-205 599-305l56-56 100 100-56 56Zm-438 0-56-56 100-100 56 56-100 100ZM440-21v-252h79v252h-79Z" />
+                    </svg>
+                    FILM
+                </div>
+            </div>
+            <div class="mt-4 text-center text-white">
+                <p class="poppins-bold">FILMOGRAPHY</p><br>
+                We craft digital, graphic and dimensional thinking, to create category leading brand experiences
+                that
+                have meaning .
+            </div>
+            <div class="mt-10">
+                <p>Explore My Projects</p>
+                <div class="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-6 text-white">
+                    <div
+                        class=" rounded-lg shadow-md overflow-hidden h-70 border border-violet-700 hover:border-violet-400 duration-200">
+                        <img src="https://i.ytimg.com/vi/FKJjUCjwt0Y/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAwYHQi6Q-lRtlLaTvdwknRNx9fEw"
+                            alt="Film Thumbnail" class="w-full h-50 object-cover" />
+                        <div class="p-4">
+                            <h3 class="text-lg poppins-semibold">
+                                Tak Seburuk Itu
+                            </h3>
+                            <a target="_blank" href="https://youtu.be/FKJjUCjwt0Y?si=R5HH_WDzGY0ozKNW"
+                                class="text-violet-400 hover:text-blue-400 duration-200">Watch on YouTube</a>
+                        </div>
+                    </div>
+                    <div
+                        class=" rounded-lg shadow-md overflow-hidden h-70 border border-violet-700 hover:border-violet-400 duration-200">
+                        <img src="https://i.ytimg.com/vi/JJ0XM22azKo/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDlgolaBSNK3pZo5DsDSlQLIRZzwg"
+                            alt="Film Thumbnail" class="w-full h-50 object-cover" />
+                        <div class="p-4">
+                            <h3 class="text-lg poppins-semibold">Jadi Apa?</h3>
+                            <a target="_blank" href="https://youtu.be/JJ0XM22azKo?si=beQtvo_eSLiAhY6b"
+                                class="text-violet-400 hover:text-blue-400 duration-200">Watch on YouTube</a>
+                        </div>
+                    </div>
+                    <div
+                        class=" rounded-lg shadow-md overflow-hidden h-70 border border-violet-700 hover:border-violet-400 duration-200">
+                        <img src="https://i.ytimg.com/vi/FtArUWo57aU/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLD3f_nIU1cxjtSvmZVClKDOw-5IGA"
+                            alt="Film Thumbnail" class="w-full h-50 object-cover" />
+                        <div class="p-4">
+                            <h3 class="text-lg poppins-semibold">
+                                Sampai Tua Nanti Video Clip
+                            </h3>
+                            <a target="_blank" href="https://youtu.be/FtArUWo57aU?si=4XljXROUknOJf5kf"
+                                class="text-violet-400 hover:text-blue-400 duration-200">Watch on YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="w-full bg-gray-950">
+        <div class="text-white poppins-bold text-2xl m-8">Have a project in mind? Let’s get to work.</div>
+        <a href="#footer" class="p-2 bg-purple-400 mx-8 my-12 text-white">
+            Say Hello
+            <sup><span class="text-xs scale-75 pl-0.5"><i
+                        class="fa-solid fa-arrow-up-right-from-square text-xs scale-[75%]"></i></span></sup>
+        </a>
+        <img src="image/contacme.webp" alt="contact me!" class="mx-auto w-100">
+    </div>
+
+    <div id="footer" class="w-full p-4 bg-purple-400 p-4">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="text-white m-4">
+                <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                    fill="#FFFFFF">
+                    <path
+                        d="M760-480q0-117-81.5-198.5T480-760v-80q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480h-80Zm-160 0q0-50-35-85t-85-35v-80q83 0 141.5 58.5T680-480h-80Zm198 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" />
+                </svg>
+                <p>Ricky Wijaya</p>
+                <p>+62 896-3728-7300</p>
+            </div>
+            <div class="text-white m-4">
+                <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                    fill="#FFFFFF">
+                    <path
+                        d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+                </svg>
+                <p>rickywijayax@gmail.com</p>
+            </div>
+            <div class="text-white m-4">
+                <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#FFFFFF"><path d="M320-286h320v-19q0-42-42.5-65T480-393q-75 0-117.5 23T320-305v19Zm159.92-174q30.08 0 51.58-21.42t21.5-51.5q0-30.08-21.42-51.58t-51.5-21.5q-30.08 0-51.58 21.42t-21.5 51.5q0 30.08 21.42 51.58t51.5 21.5ZM140-120q-24 0-42-18t-18-42v-513q0-23 18-41.5t42-18.5h147l73-87h240l73 87h147q23 0 41.5 18.5T880-693v513q0 24-18.5 42T820-120H140Zm0-60h680v-513H645l-73-87H388l-73 87H140v513Zm340-257Z"/></svg>
+                <h1 class="text-xl poppins-semibold opacity-60">Social Media</h1>
+                        <div class="mt-2">
+                            <a target="_blank" href="https://www.linkedin.com/in/ricky-wijaya-8b9231321/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                            <a target="_blank" href="https://github.com/RickWijaya"><i class="fa-brands fa-github fa-2xl"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/rickywijaya____/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                        </div>
+            </div>
+        </div>
+        <hr class="text-white opacity-70 my-10">
+        <p class="text-white poppins-semibold text-sm text-center opacity-70">&copy; 2025 Ricky Wijaya. All
+            rights
+            reserved.</p>
+    </div>
+    </div>
+</body>
+
+</html>
